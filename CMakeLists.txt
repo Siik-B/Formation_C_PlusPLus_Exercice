@@ -11,8 +11,8 @@ endif()
 set(CMAKE_C_COMPILER "/usr/bin/gcc")
 set(CMAKE_CXX_COMPILER "/usr/bin/g++")
 
-set(CMAKE_CXX_FLAGS_DEBUG_INIT "-Wall")
-set(CMAKE_CXX_FLAGS_RELEASE_INIT "-Wall")
+set(CMAKE_CXX_FLAGS_DEBUG_INIT "-Wall -Wc++compat")
+set(CMAKE_CXX_FLAGS_RELEASE_INIT "-Wall -Wc++compat")
 
 project ("Formation")
 
@@ -49,7 +49,7 @@ add_subdirectory ("C6")
 # Multiple inheritance
 add_subdirectory ("C7")
 # Diamond inheritance
-add_subdirectory ("C8")
+# add_subdirectory ("C8")
 
 # Exception
 add_subdirectory ("D1")
@@ -75,6 +75,8 @@ add_subdirectory ("E6")
 add_subdirectory ("E7")
 # Lambda capture
 add_subdirectory ("E8")
+# Lambda expert
+add_subdirectory ("E9")
 
 # First multithreading
 add_subdirectory ("F1")

@@ -2,6 +2,8 @@
 # la logique spécifique au projet ici.
 #
 
+set(CMAKE_GENERATOR_PLATFORM x64)
+
 # Ajoutez une source à l'exécutable de ce projet.
 add_executable (A2 "A2.cpp" )
 

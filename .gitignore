@@ -32,3 +32,8 @@
 *.app
 
 bin/
+*.cmake
+*.make
+*.txt
+Makefile
+CMakeFiles/
