@@ -9,7 +9,6 @@
  - Bonus: Que se passe-t-il si l'utilisateur fournit une lettre? Corriger ça avec cin.fail ()
  - Bonus: Que se passe-t-il si le nombre à deviner vaut 077?
  - Bonus: Afficher le nombre à deviner de manière binaire (utiliser #include <bitset>)
- - Bonus: Afficher le nombre à deviner en binaire (sinon en décimal ce serait trop facile à deviner…)
  - Bonus: Faite en sorte que l'application puisse prendre le nombre à deviner en tant que paramètre. (Utiliser une option -i pour définir la valeur en int ou bien -b pour la définir en binaire)
 */
 
