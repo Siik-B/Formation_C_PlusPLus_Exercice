@@ -4,3 +4,6 @@
  - Ecrivez une application console affichant “Hello World”
 */
 
+int main() {
+    return 0;
+}

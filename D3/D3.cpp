@@ -1,7 +1,6 @@
 /*
 ## D3 : Utiliser static et dynamique library
- - Créer un projet d’application console D3 et un projet vide Logger
- - Dans le projet Logger créer deux fichier Logger.h et Logger.cpp et écrire une fonction void log(std::string)
+ - Dans le projet D3_Logger créer deux fichier Logger.h et Logger.cpp et écrire une fonction void log(std::string)
  - Changer les options de compilation de projet pour générer une library static
  - Appeler la fonction log depuis la fonction main du projet D3
  - Transformer le projet Logger pour générer une lib dynamique

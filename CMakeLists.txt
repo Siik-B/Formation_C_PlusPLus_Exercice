@@ -11,8 +11,8 @@ endif()
 set(CMAKE_C_COMPILER "/usr/bin/gcc")
 set(CMAKE_CXX_COMPILER "/usr/bin/g++")
 
-set(CMAKE_CXX_FLAGS_DEBUG_INIT "-Wall -Wc++compat")
-set(CMAKE_CXX_FLAGS_RELEASE_INIT "-Wall -Wc++compat")
+set(CMAKE_CXX_FLAGS_DEBUG_INIT "-Wall -Wextra -Wconversion -std=c++17")
+set(CMAKE_CXX_FLAGS_RELEASE_INIT "-Wall -Wextra -Wconversion -std=c++17")
 
 project ("Formation")
 
@@ -56,8 +56,8 @@ add_subdirectory ("D1")
 # Template
 add_subdirectory ("D2")
 # Library
-add_subdirectory ("D3")
-add_subdirectory ("D3_Logger")
+# add_subdirectory ("D3")
+# add_subdirectory ("D3_Logger")
 
 # String
 add_subdirectory ("E1")
@@ -77,6 +77,12 @@ add_subdirectory ("E7")
 add_subdirectory ("E8")
 # Lambda expert
 add_subdirectory ("E9")
+# std::bind
+add_subdirectory ("E10")
+# fonctor
+add_subdirectory ("E11")
+# std::function
+add_subdirectory ("E12")
 
 # First multithreading
 add_subdirectory ("F1")
@@ -89,3 +95,9 @@ add_subdirectory ("F4")
 
 # Factory
 add_subdirectory ("G1")
+# Operator overload
+add_subdirectory ("G2")
+# Using
+add_subdirectory ("G3")
+# Move
+add_subdirectory ("G4")

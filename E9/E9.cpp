@@ -1,3 +1,9 @@
+/**
+ * Moderniser le programme fourni en utilisant les fonctionnalités C++11-14-17
+ * Utiliser lambda – std::accumulate – std::sort – std::copy_if – std::remove_if
+ * Vous aurez besoin de #include <algorithm> et #include <numeric>
+*/
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -67,9 +73,9 @@ void sort_by_population(std::vector< Town >& v)
 			if (v[j].population() < v[j + 1].population())
 			{
 				// Swap
-				Town t = std::move(v[j]);
-				v[j] = std::move(v[j + 1]);
-				v[j + 1] = std::move(t);
+				Town t = v[j];
+				v[j] = v[j + 1];
+				v[j + 1] = t;
 			}
 		}
 	}
@@ -78,17 +84,18 @@ void sort_by_population(std::vector< Town >& v)
 std::list<Town> extract_towns_from_country(std::vector< Town >& v, const Country& c)
 {
 	std::list<Town> result;
-	std::vector< Town >::iterator it;
-	for (it = v.begin(); it != v.end(); it++)
+	std::vector< Town >::iterator it = v.begin();
+	while( it != v.end() )
 	{
 		if (it->country() == c)
 		{
-			result.emplace_back(std::move(*it));
-			v.erase(it); // erase invalidate the iterator
-			it = v.begin(); // return to the beginning
+			result.push_back(*it);
+			it = v.erase(it); // erase invalidate the iterator
 		}
+		else
+			it++;
 	}
-	
+
 	return result;
 }
 
