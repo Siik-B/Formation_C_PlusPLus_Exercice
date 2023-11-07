@@ -1,5 +1,16 @@
 # Exercices formation C++ - 2023
 
+Besoin pour la formation
+- gcc / g++ :
+`sudo apt update`
+`sudo apt install build-essential libssl-dev`
+- cmake
+`sudo apt-get install cmake`
+- gdb
+`sudo apt-get install gdb`
+- vscode
+`sudo apt install ./<file>.deb`
+
 ## A0 : HelloWorld
  - Elle consiste d’un fichier  *.cpp implémentant la fonction int main()
  - Utiliser un environnement de développement intégré (IDE)
