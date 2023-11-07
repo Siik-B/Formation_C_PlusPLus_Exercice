@@ -34,6 +34,6 @@
 bin/
 *.cmake
 *.make
-*.txt
 Makefile
 CMakeFiles/
+CMakeCache.txt
