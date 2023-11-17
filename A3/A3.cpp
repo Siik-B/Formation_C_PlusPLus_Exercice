@@ -12,6 +12,9 @@
 */
 #include <iostream>
 
+void add(int i) {}
+void add(unsigned int i) {}
+
 int main()
 {
 	return 0;

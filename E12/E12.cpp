@@ -12,13 +12,13 @@ Appelez de manière générique les fonctions du conteneur associatif lorsque le
 class Drone
 {
     public:
-    void turn_off()
-    {
-        if( _signalTurnOff )
-            _signalTurnOff();
-    }
+        void turn_off()
+        {
+            if( _signalTurnOff )
+                _signalTurnOff();
+        }
 
-    std::function<void()> _signalTurnOff = nullptr;
+        std::function<void()> _signalTurnOff = nullptr;
 };
 
 bool running = true;

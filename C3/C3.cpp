@@ -21,8 +21,34 @@ int generate_random()
 	return dis(gen);
 }
 
+class Tree {
+public:
+
+	void serialize( std::ostream& stream ) const {
+		stream << "Test";
+	}
+
+	Tree& operator<< (const Tree& tree) {
+
+	}
+
+	Tree& operator<< (const int& tree) {
+		
+	}
+
+private:
+	int i=0;
+};
+
+std::ostream& operator<< (std::ostream& stream, const Tree& tree) {
+	tree.serialize(stream);
+	return stream;
+}
+
 int main()
 {
-	
+	Tree t;
+	t << 1 << 2 << 3;
+	std::cout << t;
 	return 0;
 }

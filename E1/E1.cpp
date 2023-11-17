@@ -30,7 +30,9 @@ void replaceChars(std::string& modifyMe, std::string const& findMe, std::string 
 int main()
 {
 	std::string str = "Hello";
-
+	std::string s;
+	
+	std::cout << "s size:" << s.size() << " capacity:" << s.capacity() << std::endl;
 	std::cout << "str size:" << str.size() << " capacity:" << str.capacity() << std::endl;
 	str.append(" ");
 	str += "World ";

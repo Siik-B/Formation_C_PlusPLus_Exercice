@@ -35,8 +35,8 @@ public:
 
 protected:
 	std::string _name;
-	unsigned int _population;
 	Country _country;
+	unsigned int _population;
 };
 
 std::vector< Town > create_towns()
@@ -66,9 +66,9 @@ std::string towns_to_string(const C& v)
 
 void sort_by_population(std::vector< Town >& v)
 {
-	for (int i = v.size(); i > 1; i--)
+	for (size_t i = v.size(); i > 1; i--)
 	{
-		for (int j = 0; j < i - 1; j++)
+		for (size_t j = 0; j < i - 1; j++)
 		{
 			if (v[j].population() < v[j + 1].population())
 			{

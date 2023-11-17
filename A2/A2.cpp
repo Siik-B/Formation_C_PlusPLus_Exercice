@@ -13,8 +13,12 @@
 */
 
 #include <iostream>
+#include <bitset>
+#include <string.h>
+#include <bitset>
 
 int main()
 {
+
 	return 0;
 }
